@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: yashwanthkumar1999/azure-be-ga:latest
+          tags: yashwanthkumar1999/demo:latest
       - name: Deploy to VM
         uses: appleboy/ssh-action@master
         with:
@@ -39,4 +39,4 @@ jobs:
           # Commands to execute on the VM after SSH connection
           sudo docker stop my-container || true
           sudo docker rm my-container || true
-          sudo docker run -d --name my-container -p 8080:80 yashwanthkumar1999/azure-be-ga:latest
+          sudo docker run -d --name my-container -p 8080:80 yashwanthkumar1999/demo:latest
