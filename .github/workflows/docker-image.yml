@@ -39,4 +39,4 @@ jobs:
           # Commands to execute on the VM after SSH connection
           sudo docker stop my-container || true
           sudo docker rm my-container || true
-          sudo docker run -d --name my-container -p 8080:8080 yashwanthkumar1999/demo:latest
+          sudo docker run -d --name my-container -p 8080:5000 yashwanthkumar1999/demo:latest
