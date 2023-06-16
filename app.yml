@@ -12,7 +12,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: mylocalregistry.azurecr.io/vehicledocker:latest
+      - image: yashwanthkumar1999/demo
         name: myapp
         ports:
         - containerPort: 80
